@@ -3,7 +3,6 @@
 
 import socket
 import sys
-import time
 
 HOST = 'localhost'
 PORT = 9527
@@ -29,7 +28,5 @@ def udp_ip2address(ip):
     return addr
 
 if __name__ == '__main__':
-    start = time.time()
     print tcp_ip2address(sys.argv[1])
     # print udp_ip2address(sys.argv[1])
-    print time.time() - start
